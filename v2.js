@@ -1,3 +1,6 @@
+var rowSplit = '\n';
+var colSplit = ';';
+    
 (function (){
     "use strict";
     const prefix = '_sync_';
@@ -12,11 +15,6 @@
 
 (function (){
     "use strict";
-
-    const rowSplit = '\n';
-    const colSplit = ';';
-
-    
     var parseNotation = function(s){
         var s = s.replace(/([A-Z])([A-Z]+)([a-z]?)/g, function(match,p1,p2,p3){
             return p1 + p2.toLowerCase() + p3.toUpperCase();
