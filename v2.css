@@ -1,0 +1,41 @@
+* {
+    font-family: 'Source Code Pro';
+    font-size: 100%;
+    box-sizing:border-box;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+.container {
+    width: 100%; max-width: 1280px; margin: 0 auto;
+}
+
+pre,textarea,h1,h2,input {
+    width: 100%;
+    margin: 0; 
+    display: block; 
+    font-size: 80%;
+}
+
+h2 { 
+    font-size: 125%
+}
+
+h1 { 
+    font-size: 300%; 
+    margin-bottom: 0.05em;
+}
+
+input { 
+    background-color: #e0e0e0; border: 0; padding: 0.3em 0.5em;
+}
+
+textarea {
+    border-color: #e0e0e0; padding: 0.3em 0.5em;
+}
+
+pre {
+    background-color: #e0e0e0; padding: 1em;word-break: break-word; overflow-y: auto;
+}
