@@ -31,7 +31,8 @@ var colSplit = ';';
         ucc: s => parseNotation(s).map(s => ucFirst(s)).join(''),
         sep: s => parseNotation(s).map(s => ucFirst(s)).join(' '),
         hyp: s => parseNotation(s).join('-'),
-        usc: s => parseNotation(s).join('_')
+        usc: s => parseNotation(s).join('_'),
+        rgx: s => s.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')
     };
 
     var process = function(){
